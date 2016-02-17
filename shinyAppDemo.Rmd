@@ -2,7 +2,7 @@
 title: "Shiny Application Development from Aukland Volcano Datasets"
 author: "Kumar.Hemant"
 date: "Monday, February 15, 2016"
-output: html_document
+output: pdf_document
 ---
 
 This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
@@ -18,23 +18,36 @@ par(bg = "white") # "lavender"
 persp(x,y,z,theta=0,phi=30,col="green3",scale=FALSE,LTHETA=-120,SHADE=0.95,BORDER=NA,box=FALSE)
 title("Perspective Plots with Volcano Maunga Whau in Auckland")
 persp(x,y,z, theta= 45, phi=30, col="green3",scale=FALSE,LTHETA=-120,SHADE=0.95,BORDER=NA,box=FALSE)
+title("Perspective Plots with Volcano Maunga Whau in Auckland")
 persp(x,y,z, theta= 90, phi=30, col="green3",scale=FALSE,LTHETA=-120,SHADE=0.95,BORDER=NA,box=FALSE)
+title("Perspective Plots with Volcano Maunga Whau in Auckland")
 persp(x,y,z, theta=135, phi=30, col="green3",scale=FALSE,LTHETA=-120,SHADE=0.95,BORDER=NA,box=FALSE)
+title("Perspective Plots with Volcano Maunga Whau in Auckland")
 persp(x,y,z, theta=180, phi=30, col="green3",scale=FALSE,LTHETA=-120,SHADE=0.95,BORDER=NA,box=FALSE)
+title("Perspective Plots with Volcano Maunga Whau in Auckland")
 persp(x,y,z, theta=225, phi=30, col="green3",scale=FALSE,LTHETA=-120,SHADE=0.95,BORDER=NA,box=FALSE)
+title("Perspective Plots with Volcano Maunga Whau in Auckland")
 persp(x,y,z, theta=270, phi=30, col="green3",scale=FALSE,LTHETA=-120,SHADE=0.95,BORDER=NA,box=FALSE)
+title("Perspective Plots with Volcano Maunga Whau in Auckland")
 persp(x,y,z, theta=315, phi=30, col="green3",scale=FALSE,LTHETA=-120,SHADE=0.95,BORDER=NA,box=FALSE)
+title("Perspective Plots with Volcano Maunga Whau in Auckland")
 persp(x,y,z, theta=360, phi=30, col="green3",scale=FALSE,LTHETA=-120,SHADE=0.95,BORDER=NA,box=FALSE)
+title("Perspective Plots with Volcano Maunga Whau in Auckland")
 persp(x,y,z, theta=360, phi=0, col="green3",scale=FALSE,LTHETA=-120,SHADE=0.95,BORDER=NA,box=FALSE)
+title("Perspective Plots with Volcano Maunga Whau in Auckland")
 persp(x,y,z, theta=360, phi=-30, col="green3",scale=FALSE,LTHETA=-120,SHADE=0.95,BORDER=NA,box=FALSE)
+title("Perspective Plots with Volcano Maunga Whau in Auckland")
 persp(x,y,z, theta=360, phi=-45, col="green3",scale=FALSE,LTHETA=-120,SHADE=0.95,BORDER=NA,box=FALSE)
+title("Perspective Plots with Volcano Maunga Whau in Auckland")
 persp(x,y,z, theta=360, phi=-60, col="green3",scale=FALSE,LTHETA=-120,SHADE=0.95,BORDER=NA,box=FALSE)
+title("Perspective Plots with Volcano Maunga Whau in Auckland")
 #title("Perspective Plots with Volcano")
-
-
-
 ```
 
+```{r,eval=FALSE}
+# convert to all the images for animation
+$ convert *.png -delay 39 -loop 0 MaungaWhau.gif
+```
 ```{r}
 #install.packages("RColorBrewer")
 library(RColorBrewer)
